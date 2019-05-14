@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ScrollViewActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlEmptyState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Выберите пользователя" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rlUserComments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/vImageInfo"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginEnd="14dp"
+                android:background="#75ec73" />
+
+            <TextView
+                android:id="@+id/tvCommentNameOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/vImageApi"
+                android:textStyle="bold"
+                tools:text="Comment #1 from Jon" />
+
+            <TextView
+                android:id="@+id/tvCommentOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCommentNameOne"
+                android:layout_marginBottom="14dp"
+                android:layout_toEndOf="@+id/vImageInfo"
+                android:text="@string/about_scroll_vew" />
+
+            <View
+                android:id="@+id/vImageAdditional"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_below="@+id/tvCommentOne"
+                android:layout_marginEnd="14dp"
+                android:background="#ffca5f" />
+
+            <TextView
+                android:id="@+id/tvCommentNameTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCommentOne"
+                android:layout_toEndOf="@+id/vImageApi"
+                android:textStyle="bold"
+                tools:text="Comment #2 from Jon" />
+
+            <TextView
+                android:id="@+id/tvCommentTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCommentNameTwo"
+                android:layout_marginBottom="14dp"
+                android:layout_toEndOf="@+id/vImageAdditional"
+                android:text="@string/about_scroll_vew" />
+
+            <View
+                android:id="@+id/vImageApi"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_below="@+id/tvCommentTwo"
+                android:layout_marginEnd="14dp"
+                android:background="#c86def" />
+
+            <TextView
+                android:id="@+id/tvCommentNameThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCommentTwo"
+                android:layout_toEndOf="@+id/vImageApi"
+                android:textStyle="bold"
+                tools:text="Comment #3 from Jon" />
+
+            <TextView
+                android:id="@+id/tvCommentThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCommentNameThree"
+                android:layout_toEndOf="@+id/vImageApi"
+                android:text="@string/about_scroll_vew" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

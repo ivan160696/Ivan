@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingEnd="14dp"
+            android:paddingStart="14dp">
+
+            <Button
+                android:id="@+id/btnLinearLayoutScreen"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:text="LinearLayout"
+                android:textAllCaps="false" />
+
+
+            <Button
+                android:id="@+id/btnRelativeLayoutScreen"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:text="RelativeLayout"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnFrameLayoutScreen"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:text="FrameLayout"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnScrollViewScreen"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:text="ScrollView"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnCardViewScreen"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:text="CardView"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnWidgetsScreen"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:text="Кнопки, переключатели и т.д."
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnFragmentScreen"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:text="Фрагменты"
+                android:textAllCaps="false" />
+
+
+            <Button
+                android:id="@+id/btnRecyclerViewScreen"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:text="RecyclerView"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnLocalStorage"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:text="Local Storage. Realm"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnImagePickScreen"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:text="Выбор изображений"
+                android:textAllCaps="false" />
+
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

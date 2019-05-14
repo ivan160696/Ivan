@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RecyclerViewTheme" parent="AppTheme">
+        <item name="colorPrimary">#2A56C6</item>
+        <item name="colorPrimaryDark">#1C3AA9</item>
+        <item name="colorAccent">#2A56C6</item>
+        <item name="android:statusBarColor">#1C3AA9</item>
+    </style>
+
+    <style name="GooglePlayTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/green_primary</item>
+        <item name="colorPrimaryDark">@color/green_primary_dark</item>
+        <item name="colorAccent">@color/green_primary</item>
+        <item name="android:statusBarColor">@color/green_primary_dark</item>
+    </style>
+
+    <style name="GooglePlayToolbar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/green_primary</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+    </style>
+</resources>

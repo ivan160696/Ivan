@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserListFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlUserJon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="14dp"
+            android:focusable="true">
+
+            <View
+                android:id="@+id/vAvatar"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginEnd="14dp"
+
+                android:background="#ffca5f" />
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/vAvatar"
+                tools:text="Jon" />
+
+            <TextView
+                android:id="@+id/tvMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvUserName"
+                android:layout_toEndOf="@+id/vAvatar"
+                tools:text="jon@gmail.com" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlUserLisa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="14dp"
+            android:focusable="true">
+
+            <View
+                android:id="@+id/vAvatarLisa"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginEnd="14dp"
+
+                android:background="#ce80d7" />
+
+            <TextView
+                android:id="@+id/tvUserNameLisa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/vAvatarLisa"
+                tools:text="Lisa" />
+
+            <TextView
+                android:id="@+id/tvMailLisa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvUserNameLisa"
+                android:layout_toEndOf="@+id/vAvatarLisa"
+                tools:text="lisa@gmail.com" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
