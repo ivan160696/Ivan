@@ -70,8 +70,8 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatVH> {
     /**
      * Метод добавления чата в список
      *
-     * @param item - чат
-     */
+     * @param item - чат*/
+
     public void insertItem(ChatItem item) {
         // Добавить экземпляр класса ChatItem в коллекцию объектов сразу после первого элемента.
         chats.add(0, item);
